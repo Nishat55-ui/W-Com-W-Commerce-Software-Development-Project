@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+server/wcom.sqlite
+server/wcom.sqlite-shm
+server/wcom.sqlite-wal
