@@ -42,6 +42,12 @@ npm start
 
 The server listens on port `3001` by default. Set `PORT` in `.env` to change it.
 
+### Seed the test customer account
+
+Run `npm run seed` in a local development environment to apply the repeatable SQLite seed in `server/seed.sql`. It creates the test customer account if it does not exist; running it again is safe and does not create duplicates. The seeded customer email is `wcom.test.customer.1791960612667@example.com`. Do not run the test seed in production or deploy a database containing this test account.
+
+Admin sign-in is configured separately using the local `WCOM_ADMIN_EMAIL` and `WCOM_ADMIN_PASSWORD` in `.env`; admin accounts are not stored in SQLite. Keep test credentials local and change them before any non-demo use.
+
 ## Demo scope
 
 - Catalogue, search, category filtering, and sample stock are stored locally in SQLite.
